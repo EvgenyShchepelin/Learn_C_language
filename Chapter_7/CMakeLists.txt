@@ -1,0 +1,1 @@
+add_executable (Homework_7 "Homework_7.c")

@@ -1,0 +1,39 @@
+﻿{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "x64 Release",
+
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_C_STANDARD": "23",
+        "CMAKE_C_COMPILER": "C:/Program Files (x86)/Intel/oneAPI/compiler/2023.2.0/windows/bin/icx.exe",
+        "CMAKE_C_FLAGS": "/O2 /march=native",
+        "CMAKE_CXX_STANDARD": "23",
+        "CMAKE_CXX_COMPILER": "C:/Program Files (x86)/Intel/oneAPI/compiler/2023.2.0/windows/bin/icx.exe",
+        "CMAKE_CXX_FLAGS": "/O2 /march=native /QxCOMMON-AVX512",
+        "CMAKE_LINKER": "C:/LLVM/bin/lld-link.exe"
+      }
+    },
+    {
+      "name": "x64 Debug",
+
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_STANDARD": "23",
+        "CMAKE_C_COMPILER": "C:/Program Files (x86)/Intel/oneAPI/compiler/2023.2.0/windows/bin/icx.exe",
+        "CMAKE_LINKER": "C:/LLVM/bin/lld-link.exe"
+      }
+    }
+  ]
+}
